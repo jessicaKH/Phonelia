@@ -4,16 +4,6 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { exercises } from '../../../data/mock'
 
-function StarBar({ count }) {
-  return (
-    <div className="flex gap-1">
-      {Array.from({ length: 5 }).map((_, i) => (
-        <span key={i} className={`text-xl ${i < count ? 'opacity-100' : 'opacity-20'}`}>⭐</span>
-      ))}
-    </div>
-  )
-}
-
 export default function ChildHomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#4F6BED] via-[#6B7FEF] to-[#8A6FF1] flex flex-col items-center px-6 py-10 relative overflow-hidden">
@@ -67,9 +57,6 @@ export default function ChildHomePage() {
         <p className="text-white/80 text-lg font-medium">
           Prêt pour aujourd'hui ?
         </p>
-        <div className="flex justify-center mt-3">
-          <StarBar count={3} />
-        </div>
       </motion.div>
 
       {/* Exercise cards */}
