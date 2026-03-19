@@ -168,6 +168,110 @@ export const exercises = [
   },
 ]
 
+export const sessionDetails = {
+  1: {
+    id: 1,
+    patient: 'Lucas',
+    patientId: 1,
+    title: 'Session Pirate',
+    exercise: 'Mission Pirate – son R',
+    date: '17 mars 2026',
+    duration: '8 min',
+    score: 72,
+    phoneme: 'R',
+    correctWords: 18,
+    totalWords: 25,
+    emoji: '🏴‍☠️',
+    words: [
+      { word: 'ROBOT', score: 80, status: 'correct' },
+      { word: 'ROUE', score: 90, status: 'correct' },
+      { word: 'PIRATE', score: 65, status: 'warning' },
+      { word: 'TRÉSOR', score: 50, status: 'error' },
+      { word: 'ROUGE', score: 75, status: 'correct' },
+      { word: 'RIRE', score: 40, status: 'error' },
+      { word: 'RUE', score: 85, status: 'correct' },
+    ],
+    sessionProgress: [
+      { moment: 'Mot 1', score: 80 },
+      { moment: 'Mot 2', score: 90 },
+      { moment: 'Mot 3', score: 65 },
+      { moment: 'Mot 4', score: 50 },
+      { moment: 'Mot 5', score: 75 },
+      { moment: 'Mot 6', score: 40 },
+      { moment: 'Mot 7', score: 85 },
+    ],
+    articulatoryAnalysis: {
+      steps: [
+        { label: 'Position de la langue', status: 'error', detail: 'Langue trop basse — doit être contre le palais' },
+        { label: 'Vibration', status: 'warning', detail: 'Vibration faible — son R peu audible' },
+        { label: 'Souffle', status: 'correct', detail: 'Débit d\'air correct' },
+      ],
+      comparison: [
+        { expected: 'Langue haute (palais)', observed: 'Langue basse' },
+        { expected: 'Forte vibration', observed: 'Vibration faible' },
+        { expected: 'Bouche mi-ouverte', observed: 'Bouche trop ouverte' },
+      ],
+    },
+    insights: [
+      { icon: '⚠️', text: 'Difficulté persistante sur le phonème R', type: 'warning' },
+      { icon: '🔍', text: 'Problème de position de langue identifié', type: 'warning' },
+      { icon: '✅', text: 'Bon souffle et bonne intention de prononciation', type: 'success' },
+    ],
+    recommendations: [
+      { icon: '🔁', label: 'Répétition lente', detail: 'Travailler les mots R à rythme réduit' },
+      { icon: '🪞', label: 'Travail miroir', detail: 'Observer la position de la langue en miroir' },
+    ],
+  },
+  2: {
+    id: 2,
+    patient: 'Lucas',
+    patientId: 1,
+    title: 'Répétition R',
+    exercise: 'Répétition mots R – son R',
+    date: '12 mars 2026',
+    duration: '6 min',
+    score: 58,
+    phoneme: 'R',
+    correctWords: 12,
+    totalWords: 20,
+    emoji: '🎤',
+    words: [
+      { word: 'ROBOT', score: 60, status: 'warning' },
+      { word: 'RUE', score: 70, status: 'correct' },
+      { word: 'RIRE', score: 45, status: 'error' },
+      { word: 'ROUGE', score: 55, status: 'warning' },
+      { word: 'ROUE', score: 65, status: 'warning' },
+    ],
+    sessionProgress: [
+      { moment: 'Mot 1', score: 60 },
+      { moment: 'Mot 2', score: 70 },
+      { moment: 'Mot 3', score: 45 },
+      { moment: 'Mot 4', score: 55 },
+      { moment: 'Mot 5', score: 65 },
+    ],
+    articulatoryAnalysis: {
+      steps: [
+        { label: 'Position de la langue', status: 'error', detail: 'Langue mal positionnée' },
+        { label: 'Vibration', status: 'error', detail: 'Vibration absente sur la plupart des mots' },
+        { label: 'Souffle', status: 'warning', detail: 'Souffle irrégulier' },
+      ],
+      comparison: [
+        { expected: 'Langue haute (palais)', observed: 'Langue basse' },
+        { expected: 'Forte vibration', observed: 'Vibration absente' },
+        { expected: 'Souffle régulier', observed: 'Souffle haché' },
+      ],
+    },
+    insights: [
+      { icon: '⚠️', text: 'Session difficile — score en baisse par rapport à S1', type: 'warning' },
+      { icon: '💡', text: 'Recommande un retour aux exercices de base', type: 'info' },
+    ],
+    recommendations: [
+      { icon: '🔁', label: 'Répétition lente', detail: 'Revenir aux sons isolés avant les mots complets' },
+      { icon: '🎧', label: 'Écoute active', detail: 'Faire écouter des exemples corrects du son R' },
+    ],
+  },
+}
+
 export const recentActivity = [
   { patient: 'Emma', action: 'Exercice "Jungle CH" terminé', score: 90, time: 'Il y a 2h', avatar: '👧' },
   { patient: 'Lucas', action: 'Exercice "Pirate R" en cours', score: 72, time: 'Aujourd\'hui', avatar: '🧒' },

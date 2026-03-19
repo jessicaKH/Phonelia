@@ -207,9 +207,11 @@ export default function PatientPage() {
                     </div>
                     <ScoreBadge score={session.score} />
                   </div>
-                  <button className="mt-3 w-full py-2 text-sm text-primary font-medium border border-primary/30 rounded-xl hover:bg-primary hover:text-white transition-all active:scale-95">
-                    Voir détails
-                  </button>
+                  <Link href={`/session/${session.id}`}>
+                    <button className="mt-3 w-full py-2 text-sm text-primary font-medium border border-primary/30 rounded-xl hover:bg-primary hover:text-white transition-all active:scale-95">
+                      Voir détails
+                    </button>
+                  </Link>
                 </div>
               </motion.div>
             ))}

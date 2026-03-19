@@ -320,7 +320,7 @@ export default function ExercisePage() {
                 <p className="text-white/80 text-base mb-1">
                   Super, tu as bien dit <strong className="text-white">{currentWord}</strong> !
                 </p>
-                <p className="text-white/60 text-sm">Tu fais vibrer ta langue comme un champion ! 🏆</p>
+                <p className="text-white/60 text-sm">Incroyable, continue comme ça ! 🚀</p>
               </>
             ) : (
               <>
